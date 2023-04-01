@@ -19,6 +19,7 @@ def ask_question_even():
     random_number = randint(MIN_RAND_NUM_VALUE, MAX_RAND_NUM_VALUE)
     print(f'Question: {random_number}')
     answer = prompt.string('Your answer: ')
+    answer = answer.lower()
     correct_answer = get_correct_answer(random_number)
     return (answer, correct_answer)
 
