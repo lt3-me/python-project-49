@@ -9,7 +9,11 @@ MAX_RAND_NUM_VALUE = 99
 
 
 def main():
-    name = cli.welcome_user()
+    username = cli.welcome_user()
+    start_game(username)
+
+
+def start_game(username):
     print('Answer "yes" if the number is even, otherwise answer "no".')
     for _ in range(QUESTIONS_COUNT):
         random_number = randint(MIN_RAND_NUM_VALUE, MAX_RAND_NUM_VALUE)
@@ -26,9 +30,9 @@ def main():
         else:
             print(f"'{answer}' is wrong answer ;(. "
                   f"Correct answer was '{corr_answer}'.")
-            print(f"Let's try again, {name}!")
+            print(f"Let's try again, {username}!")
             return None
-    print(f'Congratulations, {name}!')
+    print(f'Congratulations, {username}!')
 
 
 if __name__ == '__main__':
