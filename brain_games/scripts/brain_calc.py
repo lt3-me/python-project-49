@@ -4,7 +4,6 @@ import prompt
 import brain_games.cli as cli
 from brain_games.game import start_game
 
-QUESTIONS_COUNT = 3
 MIN_RAND_NUM_VALUE = 2
 MAX_RAND_NUM_VALUE = 99
 MAX_MULT_RES_VALUE = 225
@@ -16,7 +15,7 @@ DESC = 'What is the result of the expression?'
 
 def main():
     username = cli.welcome_user()
-    start_game(username, DESC, QUESTIONS_COUNT, ask_question_even)
+    start_game(username, DESC, ask_question_even)
 
 
 def ask_question_even():

@@ -1,7 +1,9 @@
-def start_game(username: str, game_desc: str,
-               questions_count: int, ask_question):
+ROUNDS_NUMBER = 3
+
+
+def start_game(username: str, game_desc: str, ask_question):
     print(game_desc)
-    for _ in range(questions_count):
+    for _ in range(ROUNDS_NUMBER):
         answer, correct_answer = ask_question()
         if answer == correct_answer:
             print('Correct!')
