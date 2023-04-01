@@ -19,20 +19,24 @@ def start_game(username):
         random_number = randint(MIN_RAND_NUM_VALUE, MAX_RAND_NUM_VALUE)
         print(f'Question: {random_number}')
         answer = prompt.string('Your answer: ')
-        is_even = random_number % 2 == 0
-        corr_answer = ''
-        if is_even:
-            corr_answer = 'yes'
-        else:
-            corr_answer = 'no'
-        if answer.lower() == corr_answer:
+        correct_answer = get_correct_answer(random_number)
+        if answer.lower() == correct_answer:
             print('Correct!')
         else:
             print(f"'{answer}' is wrong answer ;(. "
-                  f"Correct answer was '{corr_answer}'.")
+                  f"Correct answer was '{correct_answer}'.")
             print(f"Let's try again, {username}!")
             return None
     print(f'Congratulations, {username}!')
+
+
+def get_correct_answer(num):
+    is_even = num % 2 == 0
+    if is_even:
+        corr_answer = 'yes'
+    else:
+        corr_answer = 'no'
+    return corr_answer
 
 
 if __name__ == '__main__':
