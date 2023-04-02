@@ -17,19 +17,19 @@ def main():
 
 
 def ask_question_even():
-    start_gcd = randint(MIN_RAND_GCD_VALUE, MAX_RAND_GCD_VALUE)
+    correct_gcd = randint(MIN_RAND_GCD_VALUE, MAX_RAND_GCD_VALUE)
     random_multipliers = [randint(MIN_RAND_GCD_VALUE,
-                                  MAX_RAND_NUM_VALUE // start_gcd)
+                                  MAX_RAND_NUM_VALUE // correct_gcd)
                           for _ in range(NUMBER_OF_VALUES)]
-    random_numbers = [number * start_gcd for number in random_multipliers]
+    mult_gcd = gcd_list(random_multipliers)
+    random_multipliers = [number // mult_gcd for number in random_multipliers]
+    random_numbers = [number * correct_gcd for number in random_multipliers]
     print(f'Question: {" ".join(str(num) for num in random_numbers)}')
     answer = prompt.string('Your answer: ')
     try:
         answer = int(answer)
     except Exception:
         pass
-
-    correct_gcd = gcd_list(random_numbers)
 
     return (answer, correct_gcd)
 
