@@ -24,6 +24,11 @@ def ask_question_even():
     random_numbers = [number * correct_gcd for number in random_multipliers]
     print(f'Question: {" ".join(str(num) for num in random_numbers)}')
     answer = prompt.string('Your answer: ')
+    try:
+        answer = int(answer)
+    except Exception:
+        pass
+
     return (answer, correct_gcd)
 
 
