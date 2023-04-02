@@ -1,8 +1,12 @@
 import prompt
 
 
+username = "%username%"
+
+
 def welcome_user():
+    global username
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
-    return name
+    username = name
