@@ -23,10 +23,9 @@ def ask_question_even():
 def get_correct_answer(num):
     is_even = num % 2 == 0
     if is_even:
-        corr_answer = 'yes'
+        return 'yes'
     else:
-        corr_answer = 'no'
-    return corr_answer
+        return 'no'
 
 
 if __name__ == '__main__':
