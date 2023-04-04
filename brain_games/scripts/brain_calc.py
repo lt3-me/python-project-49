@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 from random import randint
 import prompt
-import brain_games.cli as cli
 from brain_games.game import start_game
 
 MIN_RAND_NUM_VALUE = 2
@@ -14,8 +13,7 @@ DESC = 'What is the result of the expression?'
 
 
 def main():
-    cli.welcome_user()
-    start_game(cli.get_username(), DESC, ask_question_calc)
+    start_game(DESC, ask_question_calc)
 
 
 def ask_question_calc():

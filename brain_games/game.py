@@ -1,7 +1,11 @@
+import brain_games.cli as cli
+
+
 ROUNDS_NUMBER = 3
 
 
-def start_game(username: str, game_desc: str, ask_question):
+def start_game(game_desc: str, ask_question):
+    username = cli.welcome_user()
     print(game_desc)
     for _ in range(ROUNDS_NUMBER):
         answer, correct_answer = ask_question()
