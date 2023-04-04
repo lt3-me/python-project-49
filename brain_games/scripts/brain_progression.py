@@ -1,6 +1,3 @@
-from random import randint
-
-
 #!/usr/bin/env python3
 from random import randint
 import prompt
@@ -26,7 +23,7 @@ def ask_question_prog():
     start_value = randint(0, MAX_RAND_START_VALUE)
     stop_value = start_value + \
         common_difference * NUMBER_OF_ELEMENTS
-    progression = list(range(start_value, stop_value, 
+    progression = list(range(start_value, stop_value,
                              common_difference))
     missing_element = randint(0, 9)
     progression_string = ''
