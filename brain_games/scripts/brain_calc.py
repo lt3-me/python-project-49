@@ -15,10 +15,10 @@ DESC = 'What is the result of the expression?'
 
 def main():
     cli.welcome_user()
-    start_game(cli.get_username(), DESC, ask_question_even)
+    start_game(cli.get_username(), DESC, ask_question_calc)
 
 
-def ask_question_even():
+def ask_question_calc():
     random_operator = OPERATIONS[randint(0, len(OPERATIONS)-1)]
     random_number1 = randint(MIN_RAND_NUM_VALUE, MAX_RAND_NUM_VALUE)
     random_number2 = generate_second_operand(random_number1, random_operator)

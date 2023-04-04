@@ -13,10 +13,10 @@ NUMBER_OF_VALUES = 2
 
 def main():
     cli.welcome_user()
-    start_game(cli.get_username(), DESC, ask_question_even)
+    start_game(cli.get_username(), DESC, ask_question_gcd)
 
 
-def ask_question_even():
+def ask_question_gcd():
     correct_gcd = randint(MIN_RAND_GCD_VALUE, MAX_RAND_GCD_VALUE)
     random_multipliers = [randint(MIN_RAND_GCD_VALUE,
                                   MAX_RAND_NUM_VALUE // correct_gcd)
