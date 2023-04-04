@@ -1,5 +1,6 @@
 from random import randint
 import prompt
+from brain_games.games.game import start_game
 
 MIN_RAND_NUM_VALUE = 2
 MAX_RAND_NUM_VALUE = 99
@@ -7,6 +8,10 @@ MAX_MULT_RES_VALUE = 225
 
 OPERATIONS = ['+', '-', '*']
 DESC = 'What is the result of the expression?'
+
+
+def start_calc():
+    start_game(DESC, ask_question_calc)
 
 
 def ask_question_calc():

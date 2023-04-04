@@ -1,10 +1,15 @@
 from random import randint
 import prompt
+from brain_games.games.game import start_game
 
 MIN_RAND_NUM_VALUE = 0
 MAX_RAND_NUM_VALUE = 230
 
 DESC = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+
+
+def start_prime():
+    start_game(DESC, ask_question_prime)
 
 
 def ask_question_prime():
