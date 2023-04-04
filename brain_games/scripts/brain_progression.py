@@ -42,5 +42,6 @@ def ask_question_prog():
 
     return (answer, correct_answer)
 
+
 if __name__ == '__main__':
     main()
