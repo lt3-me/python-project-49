@@ -1,6 +1,5 @@
 from random import randint
 import prompt
-from brain_games.game import start_game
 
 MIN_RAND_GCD_VALUE = 2
 MAX_RAND_GCD_VALUE = 25
@@ -10,11 +9,7 @@ DESC = 'Find the greatest common divisor of given numbers.'
 NUMBER_OF_VALUES = 2
 
 
-def start_gcd():
-    start_game(DESC, ask_question_gcd)
-
-
-def ask_question_gcd():
+def ask_question():
     correct_gcd = randint(MIN_RAND_GCD_VALUE, MAX_RAND_GCD_VALUE)
     random_multipliers = [randint(MIN_RAND_GCD_VALUE,
                                   MAX_RAND_NUM_VALUE // correct_gcd)

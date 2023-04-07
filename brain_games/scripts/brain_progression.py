@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-from brain_games.games.progression_game import start_prog
+import brain_games.games.progression_game as progression_game
+from brain_games.game import start_game
 
 
 def main():
-    start_prog()
+    start_game(progression_game)
 
 
 if __name__ == '__main__':

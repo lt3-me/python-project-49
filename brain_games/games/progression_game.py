@@ -1,6 +1,5 @@
 from random import randint
 import prompt
-from brain_games.game import start_game
 
 MAX_RAND_START_VALUE = 100
 MIN_RAND_COMMON_DIFF = 2
@@ -8,10 +7,6 @@ MAX_RAND_COMMON_DIFF = 20
 NUMBER_OF_ELEMENTS = 10
 
 DESC = 'What number is missing in the progression?'
-
-
-def start_prog():
-    start_game(DESC, ask_question_prog)
 
 
 def ask_question_prog():
