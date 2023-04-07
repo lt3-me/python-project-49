@@ -1,6 +1,6 @@
 from random import randint
 import prompt
-from brain_games.games.game import start_game
+from brain_games.game import start_game
 
 MAX_RAND_START_VALUE = 100
 MIN_RAND_COMMON_DIFF = 2
