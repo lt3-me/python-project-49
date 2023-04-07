@@ -9,7 +9,7 @@ NUMBER_OF_ELEMENTS = 10
 DESC = 'What number is missing in the progression?'
 
 
-def ask_question_prog():
+def ask_question():
     common_difference = randint(MIN_RAND_COMMON_DIFF,
                                 MAX_RAND_COMMON_DIFF)
     start_value = randint(0, MAX_RAND_START_VALUE)
