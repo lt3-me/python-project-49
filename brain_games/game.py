@@ -17,5 +17,5 @@ def start_game(game_desc: str, ask_question):
             print(f"'{answer}' is wrong answer ;(. "
                   f"Correct answer was '{correct_answer}'.")
             print(f"Let's try again, {username}!")
-            return None
-    print(f'Congratulations, {username}!')
+    else:
+        print(f'Congratulations, {username}!')
