@@ -16,10 +16,11 @@ def ask_question():
     mult_gcd = gcd_list(random_multipliers)
     random_multipliers = [number // mult_gcd for number in random_multipliers]
     random_numbers = [number * correct_gcd for number in random_multipliers]
-    print(f'Question: {" ".join(str(num) for num in random_numbers)}')
+
+    question = " ".join(str(num) for num in random_numbers)
     correct_gcd = str(correct_gcd)
 
-    return correct_gcd
+    return (question, correct_gcd)
 
 
 def gcd(num1, num2):

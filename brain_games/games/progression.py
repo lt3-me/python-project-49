@@ -24,8 +24,8 @@ def ask_question():
                 str(elem) + ' '
         else:
             progression_string = progression_string + '.. '
+
     progression_string = progression_string.strip()
-    print(f'Question: {progression_string}')
     correct_answer = str(progression[missing_element])
 
-    return correct_answer
+    return (progression_string, correct_answer)

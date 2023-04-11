@@ -8,13 +8,14 @@ def ask_question():
     random_operator = OPERATIONS[randint(0, len(OPERATIONS) - 1)]
     random_number1 = randint(1, 10)
     random_number2 = randint(1, 10)
-    print(f'Question: {random_number1} {random_operator} {random_number2}')
     correct_answer = get_correct_answer(random_number1,
                                         random_number2,
                                         random_operator)
+
+    question = f'{random_number1} {random_operator} {random_number2}'
     correct_answer = str(correct_answer)
 
-    return correct_answer
+    return (question, correct_answer)
 
 
 def get_correct_answer(num1, num2, operation):
