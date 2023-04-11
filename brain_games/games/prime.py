@@ -8,15 +8,15 @@ DESC = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 def ask_question():
     random_number = randint(MIN_RAND_NUM_VALUE, MAX_RAND_NUM_VALUE)
-    correct_answer = get_correct_answer(random_number)
+    correct_answer = 'yes' if is_prime(random_number) else 'no'
 
     return (random_number, correct_answer)
 
 
-def get_correct_answer(num):
+def is_prime(num):
     if num <= 1:
-        return 'no'
+        return False
     for i in range(2, int(num ** 0.5) + 1):
         if num % i == 0:
-            return 'no'
-    return 'yes'
+            return False
+    return True
