@@ -9,7 +9,9 @@ def start(game):
     print(f'Hello, {username}!')
     print(game.DESC)
     for _ in range(ROUNDS_NUMBER):
-        answer, correct_answer = game.ask_question()
+        correct_answer = game.ask_question()
+        answer = prompt.string('Your answer: ')
+        answer = answer.strip()
         if answer == correct_answer:
             print('Correct!')
         else:

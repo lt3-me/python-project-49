@@ -1,5 +1,4 @@
 from random import randint
-import prompt
 
 MIN_RAND_GCD_VALUE = 2
 MAX_RAND_GCD_VALUE = 25
@@ -18,13 +17,9 @@ def ask_question():
     random_multipliers = [number // mult_gcd for number in random_multipliers]
     random_numbers = [number * correct_gcd for number in random_multipliers]
     print(f'Question: {" ".join(str(num) for num in random_numbers)}')
-    answer = prompt.string('Your answer: ')
-    try:
-        answer = int(answer)
-    except Exception:
-        pass
+    correct_gcd = str(correct_gcd)
 
-    return (answer, correct_gcd)
+    return correct_gcd
 
 
 def gcd(num1, num2):

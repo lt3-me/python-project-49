@@ -1,5 +1,4 @@
 from random import randint
-import prompt
 
 MAX_RAND_START_VALUE = 100
 MIN_RAND_COMMON_DIFF = 2
@@ -27,11 +26,6 @@ def ask_question():
             progression_string = progression_string + '.. '
     progression_string = progression_string.strip()
     print(f'Question: {progression_string}')
-    answer = prompt.string('Your answer: ')
-    correct_answer = progression[missing_element]
-    try:
-        answer = int(answer)
-    except Exception:
-        pass
+    correct_answer = str(progression[missing_element])
 
-    return (answer, correct_answer)
+    return correct_answer
