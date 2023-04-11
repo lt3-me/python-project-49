@@ -1,13 +1,10 @@
 from random import randint
 
-MIN_RAND_NUM_VALUE = 0
-MAX_RAND_NUM_VALUE = 230
-
 DESC = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def ask_question():
-    random_number = randint(MIN_RAND_NUM_VALUE, MAX_RAND_NUM_VALUE)
+    random_number = randint(0, 230)
     correct_answer = 'yes' if is_prime(random_number) else 'no'
 
     return (random_number, correct_answer)
