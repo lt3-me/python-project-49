@@ -3,7 +3,7 @@ from random import randint
 DESC = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def ask_question():
+def generate_question():
     random_number = randint(0, 230)
     correct_answer = 'yes' if is_prime(random_number) else 'no'
 

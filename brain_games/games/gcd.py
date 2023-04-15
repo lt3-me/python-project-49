@@ -8,7 +8,7 @@ DESC = 'Find the greatest common divisor of given numbers.'
 NUMBER_OF_VALUES = 2
 
 
-def ask_question():
+def generate_question():
     correct_gcd = randint(MIN_RAND_GCD_VALUE, MAX_RAND_GCD_VALUE)
     random_multipliers = [randint(MIN_RAND_GCD_VALUE,
                                   MAX_RAND_NUM_VALUE // correct_gcd)
