@@ -1,13 +1,10 @@
 from random import randint
 
-MIN_RAND_NUM_VALUE = 1
-MAX_RAND_NUM_VALUE = 99
-
 DESC = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def generate_question():
-    random_number = randint(MIN_RAND_NUM_VALUE, MAX_RAND_NUM_VALUE)
+    random_number = randint(1, 99)
     is_even = random_number % 2 == 0
     if is_even:
         correct_answer = 'yes'
