@@ -22,16 +22,21 @@
 После этого станут доступны команды для старта игр:
 ### brain-even
 Определить четное число.
+
 <a href="https://asciinema.org/a/7Z2VCcsTo5nbvZ4kUufeCr2FH" target="_blank"><img src="https://asciinema.org/a/7Z2VCcsTo5nbvZ4kUufeCr2FH.svg" /></a>
 ### brain-calc
 Калькулятор. Вычислить арифметические выражения.
+
 <a href="https://asciinema.org/a/UnYdxE7eJUb0i0hyUYEhZjMwU" target="_blank"><img src="https://asciinema.org/a/UnYdxE7eJUb0i0hyUYEhZjMwU.svg" /></a>
 ### brain-gcd
 Определить наибольший общий делитель двух чисел.
+
 <a href="https://asciinema.org/a/6uSQaN7aeVQLPJkHQG8spD0MW" target="_blank"><img src="https://asciinema.org/a/6uSQaN7aeVQLPJkHQG8spD0MW.svg" /></a>
 ### brain-progression
 Найти пропущенные числа в прогрессии.
+
 <a href="https://asciinema.org/a/H3I4gbOeZLcRryLkTcfftozqr" target="_blank"><img src="https://asciinema.org/a/H3I4gbOeZLcRryLkTcfftozqr.svg" /></a>
 ### brain-prime
 Определить, является ли число простым.
+
 <a href="https://asciinema.org/a/jjHolO4e686gPB106KLe0a2a9" target="_blank"><img src="https://asciinema.org/a/jjHolO4e686gPB106KLe0a2a9.svg" /></a>
