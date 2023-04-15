@@ -6,7 +6,7 @@ MAX_RAND_NUM_VALUE = 99
 DESC = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def ask_question():
+def generate_question():
     random_number = randint(MIN_RAND_NUM_VALUE, MAX_RAND_NUM_VALUE)
     is_even = random_number % 2 == 0
     if is_even:
