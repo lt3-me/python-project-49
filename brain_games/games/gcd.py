@@ -1,18 +1,13 @@
 from random import randint
 
-MIN_RAND_GCD_VALUE = 2
-MAX_RAND_GCD_VALUE = 25
-MAX_RAND_NUM_VALUE = 162
-
 DESC = 'Find the greatest common divisor of given numbers.'
-NUMBER_OF_VALUES = 2
 
 
 def generate_question():
-    correct_gcd = randint(MIN_RAND_GCD_VALUE, MAX_RAND_GCD_VALUE)
-    random_multipliers = [randint(MIN_RAND_GCD_VALUE,
-                                  MAX_RAND_NUM_VALUE // correct_gcd)
-                          for _ in range(NUMBER_OF_VALUES)]
+    correct_gcd = randint(2, 25)
+    random_multipliers = [randint(2,
+                                  25 // correct_gcd)
+                          for _ in range(2)]
     mult_gcd = gcd_list(random_multipliers)
     random_multipliers = [number // mult_gcd for number in random_multipliers]
     random_numbers = [number * correct_gcd for number in random_multipliers]
