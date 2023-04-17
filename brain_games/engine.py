@@ -12,7 +12,6 @@ def start(game):
         question, correct_answer = game.generate_question()
         print(f'Question: {question}')
         answer = prompt.string('Your answer: ')
-        answer = answer.strip()
         if answer == correct_answer:
             print('Correct!')
         else:
