@@ -3,7 +3,7 @@ from random import randint
 DESC = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def generate_question():
+def generate_question_and_answer():
     random_number = randint(1, 99)
     is_even = random_number % 2 == 0
     if is_even:

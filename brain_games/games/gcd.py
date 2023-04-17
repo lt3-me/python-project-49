@@ -3,7 +3,7 @@ from random import randint
 DESC = 'Find the greatest common divisor of given numbers.'
 
 
-def generate_question():
+def generate_question_and_answer():
     first_number = randint(1, 100)
     second_number = randint(1, 100)
 

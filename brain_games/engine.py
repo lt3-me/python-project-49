@@ -9,7 +9,7 @@ def start(game):
     print(f'Hello, {username}!')
     print(game.DESC)
     for _ in range(ROUNDS_NUMBER):
-        question, correct_answer = game.generate_question()
+        question, correct_answer = game.generate_question_and_answer()
         print(f'Question: {question}')
         answer = prompt.string('Your answer: ')
         if answer == correct_answer:

@@ -5,7 +5,7 @@ NUMBER_OF_ELEMENTS = 10
 DESC = 'What number is missing in the progression?'
 
 
-def generate_question():
+def generate_question_and_answer():
     common_difference = randint(2, 20)
     start_value = randint(0, 100)
     stop_value = start_value + \

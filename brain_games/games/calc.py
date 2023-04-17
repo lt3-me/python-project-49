@@ -4,7 +4,7 @@ OPERATIONS = ['+', '-', '*']
 DESC = 'What is the result of the expression?'
 
 
-def generate_question():
+def generate_question_and_answer():
     random_operator = OPERATIONS[randint(0, len(OPERATIONS) - 1)]
     random_number1 = randint(1, 10)
     random_number2 = randint(1, 10)
